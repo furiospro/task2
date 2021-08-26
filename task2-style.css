@@ -29,13 +29,7 @@ section{
 	height:100%;
 }
 .marg{
-	margin: 20px 40px;
-}
-aside{
-	border: 1px solid;
-	min-width: 200px;
-	overflow:auto;
-}
+	margin: 20px 40px;}
 .content{
 	border: 1px solid;
 	width: 100%;
