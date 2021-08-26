@@ -17,9 +17,6 @@ ul{
 header{
 	min-height: 50px;
 	border: 1px solid;
-	/*display: flex;
-	justify-content: center;
-	align-items: center;*/
 }
 section{
 	height: calc(100% - 154px);
