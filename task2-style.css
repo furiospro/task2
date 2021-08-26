@@ -11,9 +11,6 @@ body{
 	height:100vh;
 
 }
-ul{
-	list-style-type: decimal;
-}
 header{
 	min-height: 50px;
 	border: 1px solid;
