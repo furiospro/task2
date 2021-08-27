@@ -5,18 +5,6 @@
 	<title>Test</title>
 	<link rel="stylesheet" href="test-style.css">
 	<script>
-		// Решение для задачи по JavaScript
-
-		/*document.addEventListener('readystatechange',function (event) {
-			switch(document.readyState){
-				case 'interactive':
-					alert('Готов к загрузке');
-					break;
-				case 'complete':
-					alert('DOM построен');
-					break;
-			}
-		})*/
 		document.addEventListener('DOMContentLoaded',function (event) {
 			function mathAction(itemOb) {
 				var form = new FormData(itemOb.closest('form'));
@@ -56,8 +44,11 @@
 				}
 			});
 
-			document.getElementById('action').addEventListener('change',function(){
-				document.getElementsByTagName('textarea')[0].value =  mathAction(this)}
+			document.getElementById('action').addEventListener('change',function() {
+					if (i[0].value !== "" && i[1].value !== "") {
+						document.getElementsByTagName('textarea')[0].value = mathAction(this)
+					}
+				}
 			)
 
 		})
