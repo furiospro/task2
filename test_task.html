@@ -45,6 +45,7 @@
 			});
 
 			document.getElementById('action').addEventListener('change',function() {
+			var i = document.getElementsByTagName('input');
 			if (i[0].value !== "" && i[1].value !== "") {
 				document.getElementsByTagName('textarea')[0].value = mathAction(this)
 			}
