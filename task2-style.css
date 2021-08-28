@@ -29,6 +29,31 @@ section{
 	width: 100%;
 	overflow:auto;
 }
+form{
+	width:66%;
+	margin:auto;
+}
+form > div{
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+}
+input{
+	height: 40px;
+	width:25%;
+	padding:0 20px;
+}
+select{
+	height: 40px;
+	width:25%;
+	padding:0 15px;
+}
+textarea{
+	height: 40px;
+	margin:25px auto;
+	width:100%;
+	padding:0 15px;
+}
 footer{
 	min-height: 100px;
 	border: 1px solid;

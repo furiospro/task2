@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Test</title>
-	<link rel="stylesheet" href="test-style.css">
+	<link rel="stylesheet" href="task2-style.css">
 	<script>
 		document.addEventListener('DOMContentLoaded',function (event) {
 			function mathAction(itemOb) {
@@ -45,35 +45,31 @@
 			});
 
 			document.getElementById('action').addEventListener('change',function() {
-			var i = document.getElementsByTagName('input');
-			if (i[0].value !== "" && i[1].value !== "") {
-				document.getElementsByTagName('textarea')[0].value = mathAction(this)
-			}
-		}
-		)
+				var i = document.getElementsByTagName('input');
+					if (i[0].value !== "" && i[1].value !== "") {
+						document.getElementsByTagName('textarea')[0].value = mathAction(this)
+					}
+				}
+			)
 
 		})
 	</script>
 </head>
 <body>
-<header>
-	<h2>Test Task</h2>
-
-</header>
+<header></header>
 <section>
-
-	<form id="form" style="width:66%;margin:auto;">
-		<div style="width:100%;display:flex;justify-content:space-between;">
-			<input type="text" name="val-1" placeholder="Введите число" style="height: 40px;width:25%;padding:0 20px;">
-			<input type="text" name="val-2" placeholder="Введите число" style="height: 40px;width:25%;padding:0 20px;">
-			<select id="action" style="height: 40px;width:25%;padding:0 15px;">
+	<form id="form">
+		<div>
+			<input type="text" name="val-1" placeholder="Введите число">
+			<input type="text" name="val-2" placeholder="Введите число">
+			<select id="action">
 				<option id="mul">Умножить</option>
 				<option id="div">Разделить</option>
 				<option id="sum">Сложить</option>
 				<option id="sub">Вычесть</option>
 			</select>
 		</div>
-		<textarea style="height: 40px; margin:25px auto;width:100%;padding:0 15px;"></textarea>
+		<textarea></textarea>
 	</form>
 </section>
 <footer>
