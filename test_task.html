@@ -33,7 +33,7 @@
 
 			document.querySelectorAll('input').forEach(function(el){
 				el.oninput = function(event){
-					event.target.value =   event.target.value.replace(/[A-Za-zА-Яа-яЁё]/, '');
+					event.target.value =   event.target.value.replace(/\D/, '');
 				}
 			});
 
